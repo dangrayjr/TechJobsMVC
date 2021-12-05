@@ -22,6 +22,8 @@ namespace TechJobsMVC.Controllers
         };
         internal static Dictionary<string, List<JobField>> TableChoices = new Dictionary<string, List<JobField>>()
         {
+            {"All", new List<JobField>(){
+            new TotalJobs ("View All") } },
             {"employer", JobData.GetAllEmployers()},
             {"location", JobData.GetAllLocations()},
             {"positionType", JobData.GetAllPositionTypes()},
